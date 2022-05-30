@@ -1,0 +1,15 @@
+@import "./variables.module.scss";
+.navbar {
+    background: linear-gradient(180deg,rgb(20, 20, 20),rgba(26,26,28,.01));
+    backdrop-filter: blur(12px);
+    padding: 1rem $primary-padding;
+}
+
+.navbar-scroll {
+    background: linear-gradient(180deg, $primary-bg, rgba(26, 26, 28, 0.3));
+    backdrop-filter: blur(12px);
+}
+
+:export {
+    navbarScroll: navbar-scroll;
+}

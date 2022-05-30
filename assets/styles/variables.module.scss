@@ -1,0 +1,28 @@
+@use "sass:map";
+$primary-color: #ff5722;
+$primary-bg: #10272f;
+$secondary-bg: #132d35;
+//
+$rounded-sm: 6px;
+$rounded-md: 8px;
+$rounded-lg: 16px;
+$rounded-xlg: 16px;
+$primary-padding: 8rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+  xlg: 1660px
+);
+
+@media (max-width: map.get($container-max-widths, "xlg")) {
+    $primary-padding: 3.8rem !global;
+}
+
+:export {
+    primaryColor: $primary-color;
+    bgPrimary: $primary-bg;
+}
